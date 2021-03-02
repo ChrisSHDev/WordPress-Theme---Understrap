@@ -1,0 +1,106 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+$primar:#223a47;
+$secondary: #f27257;
+
+$xl: 1440px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:18px;
+    line-height: 1.25;;
+}
+
+.home-banner{
+    height: 1000px;
+    background: #ccc;
+    background-image: url('../img/home-banner.png');
+    background-size: cover;
+}
+
+#wrapper-navbar{
+
+    .top-header-holder{
+        height: 260px;
+        background:#f1f1f1;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .container{
+            .row{
+                .col-4{
+                    .logo-holder{
+                        img{
+                            width:275px;
+                        }
+                    }
+                }
+                .reservation-btn{
+                    font-family: 'Fredericka the Great';
+                    font-size: 38px;
+                    border: 1px dotted $secondary;
+                    display: inline-block;
+                    padding: 0.5em 1em;
+                    border-radius: 5px;
+                    &:hover{
+                        background:$secondary;
+                        color:#fff;
+                    }
+                }
+                .contact-holder{
+                    font-size:18px;
+                    a{
+                        display: inline-block;
+                        margin-right: 1em;
+                        margin-bottom: 1em;
+                        color:$primary;
+                        .fa{
+                            color:$secondary;
+                        }
+                    }
+                }
+                .social-media-holder{
+                    font-size:50px;
+                    a{
+                        color:$secondary;
+                        text-decoration: none;
+                        &:hover{
+                            color:darken($secondary, 15%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    margin-bottom: -360px;
+
+    nav#main-nav{
+        border-top: 1px solid rgba(#5da0aa,0.5);
+        border-bottom: 1px solid rgba(#5da0aa,0.5);
+        padding: 0px;
+        ul{
+            flex:1;
+            justify-content: space-between;
+            li{
+                a{
+                    font-weight: 500;
+                    font-size:22px;
+                    text-transform: uppercase;
+                    padding: 1.5em 0.5em;
+                    @media (max-width: $xl) {
+                        font-size:20px;
+                        padding:1.5em 0.33em;
+                    }
+                }
+                &.current_page_item{
+                    a{
+                        color:$secondary;
+                    }
+                }
+            }
+        }
+    }
+}
