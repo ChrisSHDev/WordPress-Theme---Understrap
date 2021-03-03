@@ -49,6 +49,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<i class="fa fa-map"></i>
 									5460 Broadway St.
 								</a>
+								<div class="social-media-holder-tablet">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-instagram"></i></a>
+								</div>
 							</div>
 							<a hhref="#" class="reservation-btn">
 								Make a Reservation
@@ -56,6 +60,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 					</div>
 					<div class="col-">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="menu-title">Menu</div>
+						</button>
 						<div class="social-media-holder">
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-instagram"></i></a>
@@ -74,10 +84,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</h2>
 
 			<div class="container">
-
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
 
 				<!-- The WordPress Menu goes here -->
 				<?php

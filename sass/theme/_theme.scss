@@ -19,16 +19,44 @@ body{
     background: #ccc;
     background-image: url('../img/home-banner.png');
     background-size: cover;
+  
 }
 
 #wrapper-navbar{
-
+    margin-bottom:-280px;
     .top-header-holder{
+        @media(max-width:$lg){
+            height:auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+           }  
         height: 260px;
         background:#f1f1f1;
         padding-top: 50px;
         padding-bottom: 50px;
+        .navbar-toggler{
+            display: none;
+            @media(max-width:$lg){
+             display: block;  
+            }  
+            .bar{
+                height: 4px;
+                border-radius: 4px;
+                background:rgba(#5da0aa,0.5);
+                margin-bottom:4px;
+            }
+            .menu-title{
+                font-size:14px;
+                margin-top: 1em;
+                text-transform: uppercase;
+            }
+        }
+        }
         .container{
+            .col-6{
+                text-align: center;
+            }
+
             .row{
                 .col-4{
                     .logo-holder{
@@ -48,6 +76,9 @@ body{
                         background:$secondary;
                         color:#fff;
                     }
+                    @media (max-width:$lg){
+                        font-size: 18px;
+                    }
                 }
                 .contact-holder{
                     font-size:18px;
@@ -60,8 +91,16 @@ body{
                             color:$secondary;
                         }
                     }
+                    @media (max-width:$lg){
+                        display: flex;
+                        font-size:16px;
+                    .address{
+
+                            display: none;
+                        }
+                    }
                 }
-                .social-media-holder{
+                .social-media-holder, .social-media-holder-tablet{
                     font-size:50px;
                     a{
                         color:$secondary;
@@ -70,12 +109,21 @@ body{
                             color:darken($secondary, 15%);
                         }
                     }
+                    @media (max-width:$lg){
+                        display: none;
+                    }
+                    &.social-media-holder-tablet{
+                        display: none;
+                        @media (max-width:$lg){
+                            display: inline-block;
+                            font-size:18px;
+                        }
+                    }
                 }
             }
+    
         }
     }
-
-    margin-bottom: -360px;
 
     nav#main-nav{
         border-top: 1px solid rgba(#5da0aa,0.5);
@@ -94,6 +142,10 @@ body{
                         font-size:20px;
                         padding:1.5em 0.33em;
                     }
+                    @media(max-width:$lg){
+                        font-size:16px;
+                        padding:0.5em 0.33em;
+                    }
                 }
                 &.current_page_item{
                     a{
@@ -103,4 +155,3 @@ body{
             }
         }
     }
-}
