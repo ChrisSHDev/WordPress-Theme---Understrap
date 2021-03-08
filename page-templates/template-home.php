@@ -74,5 +74,64 @@ get_header();
         </div>
     </div>
 
+    <div class="home-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-md-6">
+                    <a href="#" class="news-img">
+                        <div class="image"></div>
+                        <div class="date">10.06.2020</div>
+                        <div class="category">What's On</div>
+                    </a>
+                </div>
+                <div class="col-xl-l d-none d-xl-block"></div>
+                <div class="col-md-6">
+                    <h2>
+                        Mother's Day
+                    </h2>
+                    <div class="content-holder">
+                        <p>
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                        </p>
+                     </div>
+                    <a href="#" class="button">
+                            Learn More <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-about">
+        <div class="title-holder">
+            <div class="container">
+                <h2>
+                    <span> Welcome to </span>
+                    The Backbeach Eating House
+                </h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-8">
+                    <p class="tag-line">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                    <p>
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="button">
+                        Learn More <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <?php
 get_footer();
