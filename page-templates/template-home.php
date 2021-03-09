@@ -103,11 +103,17 @@ get_header();
     </div>
 
     <div class="home-about">
+        <div class="top-overay">
+        <img src="<?php echo get_template_directory_uri();?>/img/vector.svg" alt="cut">
+        </div>
+        <div class="bottom-overay">
+        <img src="<?php echo get_template_directory_uri();?>/img/Vector (1).svg" alt="cut">
+        </div>
         <div class="title-holder">
             <div class="container">
                 <h2>
-                    <span> Welcome to </span>
-                    The Backbeach Eating House
+                    <span> Served Fresh </span>
+                    from the addock to the plate
                 </h2>
             </div>
         </div>
@@ -133,5 +139,47 @@ get_header();
         </div>
     </div>
 
+    <div class="home-about-image">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="call-to-action">
+                        <div class="image"></div>
+                        <div class="title">Dining Menu</div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="call-to-action second">
+                        <div class="image"></div>
+                        <div class="title">Lunch Menu</div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="call-to-action third">
+                        <div class="image"></div>
+                        <div class="title">Functions</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5"></div>
+                <div class="col-lg-7">
+                    <h2>Happy Customers</h2>
+                    <div class="testimonial-holder">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga voluptatibus numquam tempora mollitia dignissimos animi magni amet. Perferendis provident deserunt quos libero, error quae sapiente doloremque quibusdam doloribus, voluptatem temporibus!
+                        </p>
+                        <div class="seperator"></div>
+                        <div class="author">Author</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <?php
 get_footer();

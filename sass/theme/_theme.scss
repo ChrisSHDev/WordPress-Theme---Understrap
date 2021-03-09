@@ -230,7 +230,20 @@ body{
     
         }
     }
-.home-call-to-action{
+.home-call-to-action, .home-about-image{
+        &.home-about-image{
+            transform:translateY(-55%);
+            @media(max-width:$xl){
+                transform:translateY(-55%);
+            }
+            @media(max-width:$lg){
+                transform:translateY(-60%);
+            }
+            @media(max-width:$md){
+               display: none;
+            }
+        }
+        
     @media(max-width:$md){
         text-align: center;
     }
@@ -355,7 +368,7 @@ nav#main-nav{
 
 .home-welcome, .home-about{
     margin-top:120px;
-
+    overflow: hidden;
     .title-holder{
         padding-bottom: 60px;
         border-bottom: 1px solid rgba($primary-300,0.5);
@@ -415,8 +428,59 @@ nav#main-nav{
     }
 
     &.home-about{
-        .bg-image{
-
+        background-image: url('../img/about-background\ \(1\).jpg');
+        background-size: cover;
+        position: relative;
+        padding-top: 150px;
+        padding-bottom:250px;
+        @media(max-width:$lg){
+            padding-top:125px;
+            padding-bottom:160px;
+         }
+        @media(max-width:$md){
+            padding-top:100px;
+            padding-bottom:160px;
+         }
+         @media(max-width:$sm){
+            padding-top:50px;
+            padding-bottom:150px;
+         }
+        .top-overay{
+            display: flex;
+            position:absolute;
+            left: 0;
+            top:-1px;
+            right:0;
+            img{
+                width: 100%;
+            }
+        }
+        .bottom-overay{
+            position:absolute;
+            left:0;
+            right:0;
+            bottom:-1px;
+            img{
+                width: 100%;
+            }
+        }
+        h2{
+            color: white;
+            span{
+                color:$primary-300;
+            }
+        }
+        p{
+            color: white;
+            &.tag-line{
+                color:$primary-300;
+            }
+        }
+        .button{
+            background-color:$secondary;
+            &:hover{
+                background:$secondary-300;
+            }
         }
     }
 }
@@ -565,4 +629,54 @@ nav#main-nav{
                 }
             }
         }
+
+}
+
+
+.home-testimonial{
+    position:relative;
+    background-image: url('../img/testimonials-bg\ 1.jpg');
+    background-size:cover;
+    padding-top:200px;
+    padding-bottom:200px;
+    .testimonial-holder{
+        padding:30px;
+        background:$secondary;
+        color:white;
+        margin-top:50px;
+        border-radius: 30px;
+        font-size:24px;
+        font-weight: 300;
+        line-height: 2;
+    }
+
+    h2{
+        font-family: "Fredericka the Great";
+        font-size:72px;
+    }
+    .separator{
+        height: 1px;
+        background:white;
+    }
+    .author{
+        font-family: "Fredericka the Great";
+        padding:30px;
+        background:$secondary;
+        color:white;
+        margin-top:50px;
+        border-radius: 30px;
+        font-size:24px;
+        font-weight: 300;
+        line-height: 2;
+    }
+    &:after{
+        content:'';
+        display: block;
+        height: 230px;
+        background: linear-gradient(to bottom,rgba(white,0), rgba(white,1));
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
 }
