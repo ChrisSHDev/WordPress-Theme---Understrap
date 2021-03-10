@@ -232,6 +232,8 @@ body{
     }
 .home-call-to-action, .home-about-image{
         &.home-about-image{
+            position: relative;
+            z-index: 500;
             transform:translateY(-55%);
             @media(max-width:$xl){
                 transform:translateY(-55%);
@@ -366,7 +368,7 @@ nav#main-nav{
         }
 }
 
-.home-welcome, .home-about{
+.home-welcome, .home-about, .home-subscribe, .home-social{
     margin-top:120px;
     overflow: hidden;
     .title-holder{
@@ -433,6 +435,7 @@ nav#main-nav{
         position: relative;
         padding-top: 150px;
         padding-bottom:250px;
+
         @media(max-width:$lg){
             padding-top:125px;
             padding-bottom:160px;
@@ -482,7 +485,102 @@ nav#main-nav{
                 background:$secondary-300;
             }
         }
+
+
     }
+
+    &.home-subscribe{
+        background-image: url('../img/subscribe-bg.jpg');
+        background-size: cover;
+        margin-top:0px;
+        padding-top:100px;
+        padding-bottom:100px;
+        border-top: 1px dashed white;
+        border-bottom: 1px dashed white;
+        @media(max-width:$lg){
+            padding-top:75px;
+            padding-bottom:75px;
+         }
+        @media(max-width:$md){
+            padding-top:60px;
+            padding-bottom:60px;
+         }
+         @media(max-width:$sm){
+            padding-top:50px;
+            padding-bottom:50px;
+         }
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+
+        }
+        input{
+            width:100%;
+            padding:0.5em;
+            font-size:24px;
+            color:black;
+            background: white;
+            border: 2px dashed $primary-300;
+            height: auto;
+            line-height: initial;
+            &[type="submit"]{
+                background:$secondary;
+                &:hover{
+                    background:$secondary-300;
+                }
+            }
+
+            @media(max-width:$lg){
+                font-size:20px;
+                margin-bottom:0.25em;
+             }
+            @media(max-width:$md){
+                font-size:18px;
+                
+             }
+             @media(max-width:$sm){
+                font-size:16px;
+             }
+        }
+        .wpcf7{
+            max-width: unset;
+        }
+        h2{
+            color: white;
+            span{
+                color:$primary-300;
+            }
+        }
+        p{
+            color: white;
+            &.tag-line{
+                color:$primary-300;
+            }
+        }
+    }
+ &.home-social{
+     .facebook-holder{
+         border: 2px dashed $secondary;
+         padding: 60px;
+         font-family: '';
+
+         .title{
+             .fa{
+
+             }
+         }
+     }
+     .content{
+         .meta-data{
+             display:flex;
+         }
+     }
+ }
 }
 
 .home-news{
@@ -634,11 +732,14 @@ nav#main-nav{
 
 
 .home-testimonial{
+
     position:relative;
     background-image: url('../img/testimonials-bg\ 1.jpg');
     background-size:cover;
     padding-top:200px;
     padding-bottom:200px;
+    margin-top:-180px;
+
     .testimonial-holder{
         padding:30px;
         background:$secondary;
@@ -648,35 +749,29 @@ nav#main-nav{
         font-size:24px;
         font-weight: 300;
         line-height: 2;
+
+    }
+
+    .seperator{
+        height: 1px;
+        background:white;
     }
 
     h2{
         font-family: "Fredericka the Great";
         font-size:72px;
+        position: relative;
+        z-index: 500;
     }
-    .separator{
-        height: 1px;
-        background:white;
-    }
+
     .author{
         font-family: "Fredericka the Great";
-        padding:30px;
         background:$secondary;
         color:white;
-        margin-top:50px;
-        border-radius: 30px;
+        margin-top:16px;
         font-size:24px;
         font-weight: 300;
         line-height: 2;
     }
-    &:after{
-        content:'';
-        display: block;
-        height: 230px;
-        background: linear-gradient(to bottom,rgba(white,0), rgba(white,1));
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
+
 }
