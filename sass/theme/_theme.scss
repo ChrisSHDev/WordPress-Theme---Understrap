@@ -50,6 +50,10 @@ body{
      
 }
 
+.wpcf7{
+    max-width: unset;
+}
+
 .home-banner{
     height: 1000px;
     background: #ccc;
@@ -368,7 +372,7 @@ nav#main-nav{
         }
 }
 
-.home-welcome, .home-about, .home-subscribe, .home-social{
+.home-welcome, .home-about, .home-subscribe, .home-social, #wrapper-footer{
     margin-top:120px;
     overflow: hidden;
     .title-holder{
@@ -563,24 +567,142 @@ nav#main-nav{
             }
         }
     }
- &.home-social{
-     .facebook-holder{
-         border: 2px dashed $secondary;
-         padding: 60px;
-         font-family: '';
+    &.home-social{
 
-         .title{
-             .fa{
+        .instagram-holder{
+            padding-top: 60px;
+            .title{
+                font-size:60px;
+                margin-bottom:60px;
+                color: $primary;
+                font-family: 'Fredericka the Great';
+                .fa{
+                    color:$secondary;
+                }
+                @media(max-width:$xl){
+                    font-size:48px;
+                    margin-bottom:45px;
+                }
+                @media(max-width:$lg){
+                    font-size:36px;
+                    margin-bottom:30px;
+                }
+                @media(max-width:$md){
 
+                }
+                @media(max-width:$md){
+
+                }
+
+            }
+        }
+
+
+        .facebook-holder{
+            border: 2px dashed $secondary;
+            padding: 60px;
+            
+            @media(max-width:$md){
+
+            }
+            .title{
+                font-size:60px;
+                margin-bottom:60px;
+                color: $secondary;
+                font-family: 'Fredericka the Great';
+                .fa{
+                    color:$primary;
+                }
+
+                @media(max-width:$xl){
+                    font-size:48px;
+                    margin-bottom:45px;
+                }
+                @media(max-width:$lg){
+                    font-size:36px;
+                    margin-bottom:30px;
+                }
+                @media(max-width:$md){
+
+                }
+                @media(max-width:$md){
+
+                }
+
+
+            }
+
+        }
+        .content{
+
+            p{
+                margin-bottom:30px;
+            }
+            .meta-data{
+                display:flex;
+                border-bottom:2px dashed $primary-300;
+                padding-bottom: 30px;
+                margin-bottom:30px;
+                @media(max-width:$lg){
+                    margin-bottom:30px;
+                }
+                @media(max-width:$md){
+                    margin-top:30px;
+                }
+                .date, .likes{
+                    flex:1;
+                    .fa{
+                        color:$primary-300;
+                        font-size:1.5em;
+                        margin-right:0.25em;
+                    }
+                }
+            }
+        }
+    }
+    &#wrapper-footer{
+        background-image:url('../img/news-bg.jpg');
+        input, textarea{
+            width:100%;
+            padding:0.5em;
+            font-size:24px;
+            color:black;
+            background: white;
+            border: 2px dashed $primary-300;
+            height: auto;
+            line-height: initial;
+            margin-bottom:0.25em;
+            &[type="submit"]{
+                background:$secondary;
+                &:hover{
+                    background:$secondary-300;
+                }
+            }
+
+            @media(max-width:$lg){
+                font-size:20px;
+                
              }
-         }
-     }
-     .content{
-         .meta-data{
-             display:flex;
-         }
-     }
- }
+            @media(max-width:$md){
+                font-size:18px;
+                
+             }
+             @media(max-width:$sm){
+                font-size:16px;
+             }
+        }
+        .wpcf7{
+            max-width: unset;
+        }
+
+        .copyright{
+            margin-top:30px;
+            @media(max-width:$md){
+                margin-top:15px;
+    
+            }
+        }
+    }
 }
 
 .home-news{
@@ -774,4 +896,16 @@ nav#main-nav{
         line-height: 2;
     }
 
+}
+
+.footer-warning{
+    background-color: $primary;
+    padding-top:45px;
+    padding-bottom:45px;
+    h3{
+        color: white;
+    }
+    p{
+        color: white;
+    }
 }

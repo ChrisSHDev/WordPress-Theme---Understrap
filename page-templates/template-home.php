@@ -220,7 +220,7 @@ get_header();
                 <div class="col-lg-11">
                     <div class="facebook-holder">
                         <div class="title">
-                            <div class="fa fa-facebook-squre"></div>
+                            <div class="fa fa-facebook-square"></div>
                             What's new on facebook
                         </div>
                         <div class="row">
@@ -231,9 +231,7 @@ get_header();
                                 <div class="content">
                                     <div class="meta-data">
                                         <div class="date"><i class="fa fa-calendar"></i>  Posted 21 Jan</div>
-                                        <div class="like"><i class="fa fa-thumbs-up"></i>
-
-                                        </div>
+                                        <div class="likes"><i class="fa fa-thumbs-up"></i>235 </div>
                                     </div>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora culpa quisquam, eligendi totam voluptates reprehenderit unde. Illum animi cupiditate possimus iusto amet itaque vel dolorem tempore sed quia, nemo molestias!
@@ -243,6 +241,12 @@ get_header();
                             </div>
 
                         </div>
+                    </div>
+                    <div class="instagram-holder">
+                        <div class="title">
+                                <div class="fa fa-instagram"></div>
+                                @chrislee0320
+                            </div>
                     </div>
                 </div>
             </div>
