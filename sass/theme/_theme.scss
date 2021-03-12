@@ -142,7 +142,7 @@ body{
            }  
         height: 260px;
         background:#f1f1f1;
-        padding-top: 50px;
+        padding-top: 40px;
         padding-bottom: 50px;
         .navbar-toggler{
             display: none;
@@ -164,23 +164,24 @@ body{
         }
         .container{
             .col-6{
-                text-align: center;
+                text-align: left;
             }
 
             .row{
                 .col-4{
                     .logo-holder{
+                        padding-left:10px;
                         img{
-                            width:275px;
+                            width:222px;
                         }
                     }
                 }
                 .reservation-btn{
                     font-family: 'Fredericka the Great';
-                    font-size: 38px;
+                    font-size: 30px;
                     border: 1px dotted $secondary;
                     display: inline-block;
-                    padding: 0.5em 1em;
+                    padding: 10px 20px;
                     border-radius: 5px;
                     &:hover{
                         background:$secondary;
@@ -191,7 +192,7 @@ body{
                     }
                 }
                 .contact-holder{
-                    font-size:18px;
+                    font-size:16px;
                     a{
                         display: inline-block;
                         margin-right: 1em;
@@ -513,16 +514,6 @@ nav#main-nav{
             padding-top:50px;
             padding-bottom:50px;
          }
-        &::before{
-            content: '';
-            display: block;
-            position: absolute;
-            top:0;
-            bottom:0;
-            right:0;
-            left:0;
-
-        }
         input{
             width:100%;
             padding:0.5em;
