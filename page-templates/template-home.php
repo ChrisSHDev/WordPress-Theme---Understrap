@@ -84,8 +84,8 @@ get_header();
                         <div class="category">What's On</div>
                     </a>
                 </div>
-                <div class="col-xl-l d-none d-xl-block"></div>
-                <div class="col-md-6">
+                <div class="col-xl-1 d-none d-xl-block"></div>
+                <div class="col-xl-6 col-md-6">
                     <h2>
                         Mother's Day
                     </h2>

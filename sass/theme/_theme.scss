@@ -55,7 +55,7 @@ body{
 }
 
 .home-banner{
-    height: 1000px;
+    height: 577px;
     background: #ccc;
     background-image: url('../img/home-banner.png');
     background-size: cover;
@@ -66,7 +66,7 @@ body{
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-    padding-bottom:115px;
+    padding-bottom:90px;
     @media(max-width:$xl){
         padding-bottom:100px;
 
@@ -112,16 +112,17 @@ body{
         background-position: center bottom;
      }
     h1{
-        font-size:100px;
+        font-size:80px;
         font-family: 'Fredericka the Great';
         position:relative;
         z-index: 999;
+        padding-left: 12px;
 
         @media(max-width:$xl){
-            font-size:90px;
+            font-size:75px;
         }
         @media(max-width:$lg){
-            font-size:72px;
+            font-size:70px;
         }
         @media(max-width:$md){
             font-size:48px;
@@ -138,9 +139,9 @@ body{
         @media(max-width:$lg){
             height:auto;
             padding-top: 30px;
-            padding-bottom: 30px;
+            padding-bottom: 30px; 
            }  
-        height: 260px;
+        height: 208px;
         background:#f1f1f1;
         padding-top: 40px;
         padding-bottom: 50px;
@@ -276,6 +277,9 @@ body{
         }
         &.third{
             background:$primary;
+            .title{
+                background-color:$secondary;
+            }
         }
         &:hover{
             .title{
@@ -352,7 +356,7 @@ nav#main-nav{
             li{
                 a{
                     font-weight: 500;
-                    font-size:22px;
+                    font-size:18px;
                     text-transform: uppercase;
                     padding: 1.5em 0.5em;
                     @media (max-width: $xl) {
@@ -374,12 +378,12 @@ nav#main-nav{
 }
 
 .home-welcome, .home-about, .home-subscribe, .home-social, #wrapper-footer{
-    margin-top:120px;
+    margin-top:135px;
     overflow: hidden;
     .title-holder{
         padding-bottom: 60px;
         border-bottom: 1px solid rgba($primary-300,0.5);
-        margin-bottom: 60px;
+        margin-bottom: 30px;
         @media(max-width:$lg){
             padding-bottom: 20px;
             margin-bottom: 20px;
@@ -393,13 +397,13 @@ nav#main-nav{
         line-height: 1;
         span{
             font-family: 'Pacifico';
-            font-size:160px;
+            font-size:90px;
             display: block;
             color:$secondary-300;
-            transform:translate(140px,30px);
+            transform:translate(140px,6px);
             @media(max-width:$xl){
-                font-size: 120px;
-                transform:translate(120px,25px);
+                font-size: 85px;
+                transform:translate(120px,5px);
             }
             @media(max-width:$lg){
                 font-size: 60px;
@@ -407,9 +411,9 @@ nav#main-nav{
             }
         }
         font-family: 'Fredericka the Great';   
-        font-size: 72px;
+        font-size: 59px;
         @media(max-width:$xl){
-            font-size: 60px;
+            font-size: 55px;
         }
         @media(max-width:$lg){
             font-size: 36px;
@@ -421,7 +425,7 @@ nav#main-nav{
         line-height: 2;
         font-weight: 300;
         &.tag-line{
-            font-size:24px;
+            font-size:20px;
             color:$primary-300;
             font-weight: 600;
             line-height: 1.5;
@@ -435,6 +439,7 @@ nav#main-nav{
     }
 
     &.home-about{
+        margin-top:30px;
         background-image: url('../img/about-background\ \(1\).jpg');
         background-size: cover;
         position: relative;
@@ -697,14 +702,15 @@ nav#main-nav{
 }
 
 .home-news{
-    padding-top:200px;
-    padding-bottom:200px;
+    padding-top:160px;
+    padding-bottom:136px;
     background-image: url('../img/news-bg.jpg');
     position: relative;
+    margin-top:100px;
     &:after{
         content:'';
         display: block;
-        height: 230px;
+        height: 130px;
         background: linear-gradient(to bottom,rgba(white,0), rgba(white,1));
         position: absolute;
         bottom: 0;
@@ -712,7 +718,8 @@ nav#main-nav{
         right: 0;
     }
     h2{
-        font-size:60px;
+        margin-top: 73px;
+        font-size:50px;
         margin-bottom:.5em;
         font-family: 'Fredericka the Great';
         color:$secondary;
@@ -725,7 +732,7 @@ nav#main-nav{
         line-height: 2;
         font-weight: 200;
         &.tag-line{
-            font-size:24px;
+            font-size:20px;
             color:$primary-300;
             font-weight: 600;
             line-height: 1.5;
@@ -767,6 +774,7 @@ nav#main-nav{
             }
             &.third{
                 background:$primary;
+
             }
             &:hover{
                 .title{
@@ -802,11 +810,11 @@ nav#main-nav{
 
             }
             .date, .category{
-                font-size:30px;
+                font-size:25px;
                 position: absolute;
                 bottom:15px;
                 left:50%;
-                padding: 1em;
+                padding: 10px 35px;
                 background:$primary-300;
                 color: white;
                 border:1px dashed white;
