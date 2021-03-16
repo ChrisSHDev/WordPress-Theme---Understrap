@@ -14,9 +14,12 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     font-size:18px;
     line-height: 1.25;
-    height: 8000px;
 }
-
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
 .button{
     font-size:23px;
     background:$primary;
@@ -100,8 +103,7 @@ body{
         }
     }
     @media(max-width:$xl){
-       height: 650px;
-       background-position: center bottom;
+       height: 470px;
     }
     @media(max-width:$lg){
         height: 450px;
@@ -240,7 +242,7 @@ body{
         &.home-about-image{
             position: relative;
             z-index: 500;
-            transform:translateY(-55%);
+            transform:translateY(-46%);
             @media(max-width:$xl){
                 transform:translateY(-55%);
             }
@@ -262,8 +264,8 @@ body{
         position: relative;
         display: block;
         @media(max-width:$md){
-            width:66%;
-            padding-bottom: 66%;
+            width:100%;
+            padding-bottom: 100%;
             display: inline-block;
             margin-bottom: 15px;
         }
@@ -274,11 +276,15 @@ body{
         }
         &.second{
             background:$primary-300;
+
         }
         &.third{
             background:$primary;
             .title{
                 background-color:$secondary;
+            }
+            .image{
+                background-image: url('../img/call-to-action-3.png');
             }
         }
         &:hover{
@@ -310,6 +316,9 @@ body{
                 left:20px;
                 right:20px;
                 bottom:20px
+            }
+            &.second-img{
+                background-image: url('../img/call-to-action-2.png');
             }
 
          }
@@ -568,7 +577,7 @@ nav#main-nav{
         .instagram-holder{
             padding-top: 60px;
             .title{
-                font-size:60px;
+                font-size:48px;
                 margin-bottom:60px;
                 color: $primary;
                 font-family: 'Fredericka the Great';
@@ -602,7 +611,7 @@ nav#main-nav{
 
             }
             .title{
-                font-size:60px;
+                font-size:48px;
                 margin-bottom:60px;
                 color: $secondary;
                 font-family: 'Fredericka the Great';
@@ -657,6 +666,8 @@ nav#main-nav{
         }
     }
     &#wrapper-footer{
+        padding-top: 118px;
+        margin-top: 84px;
         background-image:url('../img/news-bg.jpg');
         input, textarea{
             width:100%;
@@ -718,13 +729,17 @@ nav#main-nav{
         right: 0;
     }
     h2{
-        margin-top: 73px;
+        margin-top: 87px;
         font-size:50px;
         margin-bottom:.5em;
         font-family: 'Fredericka the Great';
         color:$secondary;
         @media(max-width:$lg){
             font-size:36px;
+
+        }
+        @media(max-width:$md){
+            margin-top:0px;
 
         }
     }
@@ -759,8 +774,8 @@ nav#main-nav{
             position: relative;
             display: block;
             @media(max-width:$md){
-                width:66%;
-                padding-bottom: 66%;
+                width:100%;
+                padding-bottom: 100%;
                 display: inline-block;
                 margin-bottom: 15px;
             }
@@ -857,10 +872,12 @@ nav#main-nav{
     position:relative;
     background-image: url('../img/testimonials-bg\ 1.jpg');
     background-size:cover;
-    padding-top:200px;
+    padding-top:106px;
     padding-bottom:200px;
     margin-top:-180px;
-
+    @media(max-width:$md){
+        margin-top: 0px;
+    }
     .testimonial-holder{
         padding:30px;
         background:$secondary;
@@ -880,7 +897,7 @@ nav#main-nav{
 
     h2{
         font-family: "Fredericka the Great";
-        font-size:72px;
+        font-size:59px;
         position: relative;
         z-index: 500;
     }

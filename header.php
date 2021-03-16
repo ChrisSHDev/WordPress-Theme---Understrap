@@ -37,7 +37,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="row align-items-end">
 					<div class="col-4">
 						<div class="logo-holder">
-							<img src="<?php echo get_template_directory_uri();?>/img/logo.svg" alt="logo">
+							<a href="<? echo get_home_url(); ?>">
+								<img src="<?php echo get_template_directory_uri();?>/img/logo.svg" alt="logo">
+							</a>						
 						</div>
 					</div>
 					<div class="col-6">
@@ -56,7 +58,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<a href="#"><i class="fa fa-instagram"></i></a>
 								</div>
 							</div>
-							<a hhref="#" class="reservation-btn">
+							<a href="#wrapper-footer" class="reservation-btn">
 								Make a Reservation
 							</a>
 						</div>

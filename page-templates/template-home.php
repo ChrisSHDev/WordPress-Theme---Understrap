@@ -29,13 +29,13 @@ get_header();
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="call-to-action second">
-                        <div class="image"></div>
+                        <div class="image second-img"></div>
                         <div class="title">Lunch Menu</div>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="call-to-action third">
-                        <div class="image"></div>
+                        <div class="image third-img"></div>
                         <div class="title">Functions</div>
                     </a>
                 </div>
@@ -43,7 +43,7 @@ get_header();
         </div>
     </div>
 
-    <div class="home-welcome">
+    <div class="home-welcome" id="about">
         <div class="title-holder">
             <div class="container">
                 <h2>
@@ -74,7 +74,7 @@ get_header();
         </div>
     </div>
 
-    <div class="home-news">
+    <div class="home-news" id="news">
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-md-6">
@@ -164,7 +164,7 @@ get_header();
         </div>
     </div>
 
-    <div class="home-testimonial">
+    <div class="home-testimonial" id="testi">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5"></div>
@@ -172,7 +172,7 @@ get_header();
                     <h2>Happy Customers</h2>
                     <div class="testimonial-holder">
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga voluptatibus numquam tempora mollitia dignissimos animi magni amet. Perferendis provident deserunt quos libero, error quae sapiente doloremque quibusdam doloribus, voluptatem temporibus!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga voluptatibus numquam tempora mollitia dignissimos animi magni amet.
                         </p>
                         <div class="seperator"></div>
                         <div class="author">Author</div>
@@ -203,7 +203,7 @@ get_header();
         </div>
     </div>
 
-    <div class="home-social">
+    <div class="home-social" id="social">
         <div class="title-holder">
             <div class="container">
                 <h2>
